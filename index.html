@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tebak-Tebakan Lucu!</title>
+  <style>
+    body {
+      background-color: #fffaf0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #ff69b4;
+    }
+    #question {
+      font-size: 24px;
+      margin: 20px;
+    }
+    input[type="text"] {
+      padding: 10px;
+      font-size: 18px;
+      width: 300px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #ffb6c1;
+      border: none;
+      border-radius: 10px;
+      margin: 10px;
+      cursor: pointer;
+    }
+    #result {
+      font-size: 20px;
+      margin-top: 15px;
+    }
+    #score {
+      font-weight: bold;
+      font-size: 20px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧠 Tebak-Tebakan Lucu!</h1>
+  <div id="score">Skor: 0</div>
+  <div id="question">Pertanyaan muncul di sini...</div>
+  <input type="text" id="answerInput" placeholder="Tulis jawabanmu di sini..." />
+  <br />
+  <button onclick="checkAnswer()">Cek Jawaban</button>
+  <button onclick="nextQuestion()">Soal Selanjutnya</button>
+  <div id="result"></div>
+
+  <script src="tebakan.js"></script>
+</body>
+</html>
